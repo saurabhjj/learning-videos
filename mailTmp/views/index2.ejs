@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Connect With Old Mates </title>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+		<link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+		<script src="/assets/register-user.js" ></script>
+	</head>
+	<body>
+		<% include partial/header.ejs %>
+		<div id="body-content">
+			<div id="wrap">
+				<div id="intro">
+					<p>This is an opportunity to meet and connect with old friend .<br>
+					Friends who are a part and parcel of life. <br> <br>
+					People who live far and apart use this as a platform to meet an greet each other. This platform is too connect some old connects. 
+					
+					</p>
+				</div>
+				
+				<% if( typeof(regd) !== 'undefined') { %>
+					<div>
+						Congratulation !!!! you are registered :) :). Now start connecting 
+					</div>
+				<% } %>
+				
+				 <div id="body-left">
+				 	<form>
+				 	
+				 		<label for="username"> Username </label>
+						<input type="text" name="username" />
+						<label for="password"> Password </label>
+						<input type="password" name="password" />
+						
+						<button type="submit">Log In</button> 
+					</form>
+					
+					<a href="register"> Register </a>
+					
+				 </div>
+			</div>
+		</div>
+	</body>
+</html>
